@@ -128,7 +128,16 @@ export default function Chat() {
           </button>
         </div>
         <p style={styles.privacy}>
-          No messages are stored. Your input goes directly to the AI model — no database, no logs.
+          No messages stored. Responses are grounded only in Jonathan&apos;s recorded teachings.{' '}
+          <a
+            href="https://github.com/dannisonarias/jonathan-adampants-chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.sourceLink}
+          >
+            Open source
+          </a>
+          {' '}— see exactly how it works.
         </p>
       </footer>
     </div>
@@ -239,5 +248,10 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 11,
     color: '#3a3a3a',
     textAlign: 'center',
+  },
+  sourceLink: {
+    color: '#555',
+    textDecoration: 'underline',
+    textUnderlineOffset: 2,
   },
 }
