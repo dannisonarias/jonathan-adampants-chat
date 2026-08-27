@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   const ollamaUrl = process.env.OLLAMA_BASE_URL
   const ollamaModel = process.env.OLLAMA_MODEL || 'llama3.2'
   const openrouterKey = process.env.OPENROUTER_API_KEY
-  const openrouterModel = process.env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash'
+  const openrouterModel = process.env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash-latest'
 
   if (!ollamaUrl && !openrouterKey) {
     return new Response('No API key configured. Set OPENROUTER_API_KEY or OLLAMA_BASE_URL.', { status: 500 })
