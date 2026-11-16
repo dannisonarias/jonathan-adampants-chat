@@ -92,7 +92,7 @@ OPENROUTER_MODEL=google/gemini-flash-1.5
 OPENROUTER_MODEL=meta-llama/llama-3.1-8b-instruct:free
 ```
 
-The default is `deepseek/deepseek-v4-flash` — fast, cheap, and handles large context well.
+The default is `~openai/gpt-luna-latest`, an OpenRouter alias that always points to the newest GPT Luna model.
 
 ---
 
